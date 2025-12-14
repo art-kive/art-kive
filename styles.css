@@ -65,6 +65,47 @@ header {
   margin: 0 auto;
 }
 
+/* Countdown page styles */
+.countdown-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  padding: 2rem;
+  color: white; /* same as sticky banner */
+  font-family: 'NewEdge', sans-serif;
+}
+
+.countdown-page h1 {
+  font-size: 2rem; /* larger than normal */
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+#countdown {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2.5rem; /* larger numbers */
+  font-weight: bold;
+}
+
+#countdown div {
+  min-width: 100px;
+  padding: 1rem 1.5rem;
+  background: transparent; /* no background, blends with page */
+  border-radius: 12px;
+}
+
+#countdown span {
+  display: block;
+  font-size: 4rem; /* large numbers */
+  margin-bottom: 0.5rem;
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .video-container {
@@ -81,5 +122,18 @@ header {
 
   .banner-link {
     font-size: 1rem; /* slightly smaller banner text on mobile */
+  }
+
+  /* Countdown adjustments for mobile */
+  .countdown-page h1 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  #countdown {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+  #countdown span {
+    font-size: 2rem;
   }
 }
